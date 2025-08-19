@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Name | Roblox Game Developer</title>
+  <style>
+    /* Reset + base styles */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; line-height: 1.6; background: #0f0f0f; color: #fff; }
+    a { color: #00aaff; text-decoration: none; }
+    h1, h2 { margin-bottom: 1rem; }
+
+    /* Navbar */
+    nav {
+      background: #111;
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+    nav a { font-weight: bold; }
+
+    /* Sections */
+    section {
+      padding: 4rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    #hero {
+      text-align: center;
+      padding: 6rem 2rem;
+    }
+    #hero h1 { font-size: 3rem; color: #00aaff; }
+    #hero p { margin: 1rem 0; font-size: 1.2rem; }
+    .btn {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.7rem 1.5rem;
+      background: #00aaff;
+      color: white;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+    .btn:hover { background: #0088cc; }
+
+    /* Portfolio grid */
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      background: #1a1a1a;
+      padding: 1rem;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+      transition: transform 0.3s;
+    }
+    .card:hover { transform: translateY(-5px); }
+    .card img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    /* Contact */
+    #contact p { margin-bottom: 0.5rem; }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #111;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav>
+    <h2>YourLogo</h2>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <h1>Hey, I’m [Your Name]</h1>
+    <p>Roblox Game Developer | Scripter | Designer</p>
+    <a href="#contact" class="btn">Work With Me</a>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I create immersive Roblox games with custom scripting, optimized systems, and engaging gameplay. With experience in Lua, Roblox Studio, and UI/UX design, I help bring ideas to life for players around the world.</p>
+  </section>
+
+  <!-- Portfolio -->
+  <section id="portfolio">
+    <h2>Portfolio</h2>
+    <div class="portfolio-grid">
+      <div class="card">
+        <img src="example1.jpg" alt="Game Screenshot">
+        <h3>Game Title 1</h3>
+        <p>Worked on: combat system, leaderboards, datastores</p>
+      </div>
+      <div class="card">
+        <img src="example2.jpg" alt="Game Screenshot">
+        <h3>Game Title 2</h3>
+        <p>Worked on: UI design, optimization</p>
+      </div>
+      <div class="card">
+        <img src="example3.jpg" alt="Game Screenshot">
+        <h3>Game Title 3</h3>
+        <p>Worked on: scripting, full game loop</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services">
+    <h2>Services</h2>
+    <ul>
+      <li>⚡ Custom Scripting (combat, systems, leaderboards, datastores)</li>
+      <li>🎨 UI/UX Design</li>
+      <li>🛠 Optimization & bug fixing</li>
+      <li>🌍 Full Game Development</li>
+    </ul>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+    <p>Discord: YourDiscord#0000</p>
+    <p>Roblox: <a href="https://www.roblox.com/users/yourid/profile" target="_blank">My Profile</a></p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Your Name | Roblox Game Developer</p>
+  </footer>
+</body>
+</html>
